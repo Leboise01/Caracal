@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <title>Prise en main — Caracal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="Caracal — accueil">
+        <img src="assets/caracal-logo.png" alt="Logo Caracal" width="40" height="40" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+        </div>
+      </a>
+      <nav class="nav-desktop" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="photos.html" class="nav-link">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link">Suggestions</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Menu">
+        <svg class="icon" style="width:1.5rem;height:1.5rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+      <div class="container">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="photos.html" class="nav-link">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link">Suggestions</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container page-section intro-full">
+      <div class="page-header intro-header">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          prise en main
+        </div>
+        <h1>
+          Bienvenue sur le site du caracal.
+        </h1>
+        <p>
+          Vous êtes sur le site internet de la patrouille du caracal, patrouille de la troupe 3ᵉ Annecy.
+        </p>
+        <p>
+          Ce site internet a été développé pour un accès continu aux photo, calendrier de l'année et constitue un point d'information virtuel pour ceux qui en ont besoin.
+        </p>
+        <p>
+          Les pages principales sont disponibles via le menu du haut. L'historique du site avec les principaux moyens de contact est disponible en pied de page.
+          <br>Vous avez accès à deux formulaires de contact : <a href="./Readme.html" style="color:#ff7a00;"><strong>pour la patrouille</strong></a>, et <a href="./Readme.html" style="color:#ff7a00;"><strong>pour le site</strong></a>.
+        </p>
+        <p>
+          Ce site étant public, je me base sur le droit à l'image que vous avez accordé à la FSE lors de l'inscription, mais vous pouvez vous opposer à la publication des photos de votre enfant ou à ce que je floute son visage.
+          <br>Sachez toutefois que les seules visites de ce site depuis deux ans sont fait par des scouts et son accès n'est pas donné dans les moteurs de recherche.
+        </p>
+
+        <a href="index.html" class="btn-primary">Retour à l'accueil</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="assets/caracal-logo.png" alt="" width="48" height="48" loading="lazy" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+          <div class="logo-sub">Toujours en alerte</div>
+        </div>
+      </div>
+      <p class="footer-text">
+          Sur ce blog, vous avez accès aux photos des sortie, camps et week-ends et vous pouvez les télécharger.
+      <br>Si vous possédez des photos, faites le moi savoir par les suggestions.  
+      </p>
+      <div class="footer-contact">
+        <a href="./Readme.html" style="color:#ff7a00;">
+          <strong>Historique du site</strong>
+        </a>
+        Code source<br>Versions précédentes<br>Méthode de développement<br>Déploiement
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> Ambroise Uyttenhove, déploiement et développement</span>
+      <span class="semp">SEMPER PARATI</span>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

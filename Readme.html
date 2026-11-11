@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <title>À propose du site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="Caracal — accueil">
+        <img src="assets/caracal-logo.png" alt="Logo Caracal" width="40" height="40" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+        </div>
+      </a>
+      <nav class="nav-desktop" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="photos.html" class="nav-link">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link">Suggestions</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Menu">
+        <svg class="icon" style="width:1.5rem;height:1.5rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+      <div class="container">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="photos.html" class="nav-link">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link">Suggestions</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container page-section">
+      <div class="page-layout">
+        <section class="page-content">
+          <div class="page-header" style="max-width:32rem">
+            <div class="badge"><span class="badge-dot"></span>Articles connexes</div>
+            <h1>
+              À propos de ce site
+            </h1>
+            <h2 id="introduction">introduction</h2><br>
+            <p style="margin-bottom:2.5rem">
+              Bienvenue sur le site internet de la patrouille du caracal.
+              <br><br>
+              Le projet de ce site a commencé à ma deuxième année, en 2024-2025, pour la patrouille du caracal, dans le but d'obtenir le badge informatique.<br>
+              J'ai alors commencé à le construire, et les deux premières version du site ont étées entièrement tapées à la main, en environ 1000 ligne de code pour l'entièreté de la structure.<br>Le but a toujours été de présenter les photos et le calendrier de l'année<br>
+              Ce site, dans ses premières version, était purement en html, le code des pages web, avec une couche de css pour le style, les couleurs et les polices.<br>
+              Je me suis toujours basé sur des services gratuits qui hébergent les pages, contre leur nom dans l'url du site. <br>Ici <a href="https://render.com/" style="color: aqua;">Render</a>.
+              <br><br>Vous avez sans doute remarqué que cette version du blog est d'une qualité largement supérieure aux autres, de par sa structure, ses options et son style.<br>
+              J'ai choisi, après deux ans de développement d'un site très basique, de m'appuyer sur de nouveaux outils pour obtenir une qualité meilleure, mais en perdant le mérite de tout faire soi-même.<br><br>
+              En effet, le style de ce site a été imaginé par <a href="https://lovable.dev"style="color: aqua;">lovable.dev</a> sur la base de ma structure et de mon code. Cet outil a créé des milliers de fichiers inutilisables par l'humain, 
+              et j'ai passé plusieurs heures, avec l'aide de <a href="https://cursor.com/"style="color: aqua;">cursor</a>, à le réduire en simples fichiers html, que j'ai ensuite modifiés à ma manière.
+              <br><br>Au quotidien, j'utilise l'agent de <a href="https://code.visualstudio.com/"style="color: aqua;">Visual Studio Code</a>, mon éditeur de code personnel, pour automatiser les tâches.
+              <br><br>Ce site m'a donné plusieurs dizaines d'heures de travail, et je suis désormais très fier de vous l'avoir rendu beau, pratique et accessible.
+              <br><br>Ambroise Uyttenhove
+            </p>  
+          </div>
+        </section>
+
+        <aside class="page-sidebar">
+          <div class="toc-panel">
+            <div class="toc-panel-glow" aria-hidden="true"></div>
+            <div class="toc-header">
+              <span class="label">Liens connexes</span>
+            </div>
+            <nav class="toc-nav" aria-label="Sommaire de la page">
+              <div class="toc-group">
+                <p class="toc-group-label">Versions précédentes</p>
+                <ul class="toc-list">
+                  <li><a href="https://caracal-j6hh.onrender.com/" class="toc-link">Caracal 2024-2025</a></li>
+                  <li><a href="https://baribal.onrender.com/" class="toc-link">Baribal 2025-2026</a></li>
+                </ul>
+              </div>
+              <div class="toc-group">
+                <p class="toc-group-label">Développement</p>
+                <ul class="toc-list">
+                  <li><a href="https://github.com/Leboise01/Baribal---version-2" class="toc-link">Codes source de ce site</a></li>
+                  <li><a href="https://github.com/Leboise01" class="toc-link">Mon compte GitHub</a></li>
+                </ul>
+              </div>
+              <div class="toc-group">
+                <p class="toc-group-label">Mes outils</p>
+                <ul class="toc-list">
+                  <li><a href="https://render.com" class="toc-link">Hébergement</a></li>
+                  <li><a href="https://cursor.com" class="toc-link">Agent de développement</a></li>
+                </ul>
+              </div>
+              <div class="toc-group">
+                <p class="toc-group-label">Contact</p>
+                <ul class="toc-list">
+                  <li><a href="mailto:ambruyt@gmail.com" class="toc-link">Me contacter par mail</a></li>
+                  <li><a href="https://instagram.com/ambroise_uyth" class="toc-link">Instagram</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="assets/caracal-logo.png" alt="" width="48" height="48" loading="lazy" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+          <div class="logo-sub">Toujours en alerte</div>
+        </div>
+      </div>
+      <p class="footer-text">
+          Sur ce blog, vous avez accès aux photos des sortie, camps et week-ends et vous pouvez les télécharger.
+      <br>Si vous possédez des photos, faites le moi savoir par les suggestions.  
+      </p>
+      <div class="footer-contact">
+        <a href="./Readme.html" style="color:#ff7a00;">
+          <strong>Historique du site</strong>
+        </a>
+        Code source<br>Versions précédentes<br>Méthode de développement<br>Déploiement
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> Ambroise Uyttenhove, déploiement et développement</span>
+      <span class="semp">SEMPER PARATI</span>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <title>Suggestions — Pour la patrouille</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="Caracal — accueil">
+        <img src="assets/caracal-logo.png" alt="Logo Caracal" width="40" height="40" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+        </div>
+      </a>
+      <nav class="nav-desktop" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="photos.html" class="nav-link">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link active">Suggestions</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Menu">
+        <svg class="icon" style="width:1.5rem;height:1.5rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+      <div class="container">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="photos.html" class="nav-link">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link active">Suggestions</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container page-section">
+      <div class="page-header" style="max-width:32rem">
+        <div class="label" style="margin-bottom:1rem">Suggestions pour la patrouille</div>
+        <h1>
+          Proposer une idée <br />
+          <span class="text-gradient-accent" style="font-style:italic">pour la patrouille</span>
+        </h1>
+        <p style="margin-bottom:2.5rem">
+          Utilisez ce formulaire pour envoyer des idées directement pour la patrouille (sorties, totems, matériel, …).
+        </p>
+      </div>
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="form-panel" style="max-width:42rem;" >
+        <input type="hidden" name="access_key" value="81578b31-bfe6-4172-b250-278886df4f53">
+
+        <h3>Formulaire pour la patrouille - transmission à la hp.</h3>
+
+        <div class="form-field">
+          <label for="p-name">Nom</label>
+          <input type="text" id="p-name" name="name" placeholder="Votre nom" />
+        </div>
+
+
+        <div class="form-field">
+          <label for="p-message">Suggestion</label>
+          <textarea id="p-message" name="message" rows="8" placeholder="Votre message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Envoyer</button>
+      </form>
+
+      <a href="suggestions.html" class="btn-outline suggestion-back">← Choisir un autre sujet</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="assets/caracal-logo.png" alt="" width="48" height="48" loading="lazy" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+          <div class="logo-sub">Toujours en alerte</div>
+        </div>
+      </div>
+      <p class="footer-text">
+          Sur ce blog, vous avez accès aux photos des sortie, camps et week-ends et vous pouvez les télécharger.
+      <br>Si vous possédez des photos, faites le moi savoir par les suggestions.  
+      </p>
+      <div class="footer-contact">
+        <a href="./Readme.html" style="color:#ff7a00;">
+          <strong>Historique du site</strong>
+        </a>
+        Code source<br>Versions précédentes<br>Méthode de développement<br>Déploiement
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> Ambroise Uyttenhove, déploiement et développement</span>
+      <span class="semp">SEMPER PARATI</span>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

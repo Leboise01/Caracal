@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <title>Suggestions pour le site — Caracal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="Caracal — accueil">
+        <img src="assets/caracal-logo.png" alt="Logo Caracal" width="40" height="40" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+        </div>
+      </a>
+      <nav class="nav-desktop" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="photos.html" class="nav-link">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link active">Suggestions</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Menu">
+        <svg class="icon" style="width:1.5rem;height:1.5rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+      <div class="container">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="photos.html" class="nav-link">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link active">Suggestions</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container page-section">
+      <div class="page-header" style="max-width:32rem">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Suggestions pour le site
+        </div>
+        <h1>
+          Améliorer le site
+        </h1>
+        <p style="margin-bottom:2.5rem">
+          Une idée de nouvelle page, une remarque sur le design ou une correction à signaler ? Envoyez votre suggestion ici.
+        </p>
+      </div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="form-panel" style="max-width:42rem;" >
+            <input type="hidden" name="access_key" value="81578b31-bfe6-4172-b250-278886df4f53">
+
+            <h3>Formulaire pour le site - Ambroise Uyttenhove</h3>
+
+            <div class="form-field">
+              <label for="p-name">Nom</label>
+              <input type="text" id="p-name" name="name" placeholder="Votre nom" />
+            </div>
+
+            <div class="form-field">
+              <label for="satisfaction">Satisfaction générale</label>
+              <textarea id="satisfaction" name="satisfaction" rows="3" placeholder="comment évaluez vous ce site ?"></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="design">Design et esthétique</label>
+              <textarea id="design" name="design" rows="3" placeholder="Des suggestions sur l'affichage ?"></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="amelioration">Suggestions d'amélioration</label>
+              <textarea id="amelioration" name="amelioration" rows="3" placeholder="Des suggestions pour de nouveaux contenus ?"></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="fautes">Correction des fautes</label>
+              <textarea id="fautes" name="fautes" rows="3" placeholder="Voyez vous des fautes ?"></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="autre">Diverses suggestions ou questions</label>
+              <textarea id="autre" name="autre" rows="3" placeholder="autre"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">Envoyer</button>
+          </form>
+
+          <a href="suggestions.html" class="btn-outline suggestion-back">← Choisir un autre sujet</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="assets/caracal-logo.png" alt="" width="48" height="48" loading="lazy" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+          <div class="logo-sub">Toujours en alerte</div>
+        </div>
+      </div>
+      <p class="footer-text">
+          Sur ce blog, vous avez accès aux photos des sortie, camps et week-ends et vous pouvez les télécharger.
+      <br>Si vous possédez des photos, faites le moi savoir par les suggestions.  
+      </p>
+      <div class="footer-contact">
+        <a href="./Readme.html" style="color:#ff7a00;">
+          <strong>Historique du site</strong>
+        </a>
+        Code source<br>Versions précédentes<br>Méthode de développement<br>Déploiement
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> Ambroise Uyttenhove, déploiement et développement</span>
+      <span class="semp">SEMPER PARATI</span>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

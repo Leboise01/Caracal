@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <title>Caracal · 3ᵉ Annecy</title>
+  <meta name="description" content="Le carnet de bord de la patrouille du Caracal : photos, calendrier annuel et souvenirs des sorties, weekends et camps scouts." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="Caracal — accueil">
+        <img src="assets/caracal-logo.png" alt="Logo Caracal" width="40" height="40" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+        </div>
+      </a>
+      <nav class="nav-desktop" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link active">Accueil</a>
+        <a href="photos.html" class="nav-link">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link">Suggestions</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Menu">
+        <svg class="icon" style="width:1.5rem;height:1.5rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+      <div class="container">
+        <a href="index.html" class="nav-link active">Accueil</a>
+        <a href="photos.html" class="nav-link">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link">Suggestions</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="bg" src="assets/hero-forest.JPG" alt="Le lever de soleil, en haut du Piton de la Fournaise, 2026" width="1920" height="1080" />
+      <div class="hero-overlay"></div>
+      <div class="hero-glow"></div>
+      <div class="container hero-content animate-fade-up">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Le Caracal sur le web · 3ᵉ Annecy
+        </div>
+        <h1>
+          Vie de patrouille <br />
+          <span class="text-gradient-accent" style="font-style:italic">Bienvenue sur le site du caracal.</span>
+        </h1>
+        <p class="lead">
+          Le carnet de bord de la patrouille — sorties, weekends et camps.
+          Les photos, les dates, et tous les récits publiés.
+        </p>
+        <div class="hero-actions">
+          <a href="start.html" class="btn-primary">
+            Prise en main
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container next-card-wrap" id="next-activity"></div>
+
+    <section class="container section-values">
+      <div>
+        <div class="label" style="margin-bottom:1rem">principalement</div>
+        <h2>
+          Tout ce que <br /> la patrouille vit
+        </h2>
+      </div>
+      <div class="cards-grid">
+        <a href="photos.html" class="value-card">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+          <h3>PHOTOS</h3>
+          <p>Toutes les sorties, classées et téléchargeables.</p>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="calendrier.html" class="value-card">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+          <h3>DATES</h3>
+          <p>Camps, weekends, sorties</p>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="container section-recent">
+      <div class="section-header">
+        <div>
+          <div class="label" style="margin-bottom:0.75rem">Dernières mises à jour</div>
+          <h2>Photos récentes</h2>
+        </div>
+        <a href="photos.html" class="link-muted">
+          Toute la galerie
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="gallery-grid" id="recent-galleries"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="assets/caracal-logo.png" alt="" width="48" height="48" loading="lazy" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+          <div class="logo-sub">Toujours en alerte</div>
+        </div>
+      </div>
+      <p class="footer-text">
+          Sur ce blog, vous avez accès aux photos des sortie, camps et week-ends et vous pouvez les télécharger.
+      <br>Si vous possédez des photos, faites le moi savoir par les suggestions.  
+      </p>
+      <div class="footer-contact">
+        <a href="./Readme.html" style="color:#ff7a00;">
+          <strong>Historique du site</strong>
+        </a>
+        Code source<br>Versions précédentes<br>Méthode de développement<br>Déploiement
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> Ambroise Uyttenhove, déploiement et développement</span>
+      <span class="semp">SEMPER PARATI</span>
+    </div>
+  </footer>
+
+  <script src="data/photos.js"></script>
+  <script src="data/calendrier.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/accueil.js"></script>
+</body>
+</html>

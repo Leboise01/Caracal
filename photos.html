@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <title>Photos — Caracal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="Caracal — accueil">
+        <img src="assets/caracal-logo.png" alt="Logo Caracal" width="40" height="40" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+        </div>
+      </a>
+      <nav class="nav-desktop" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="photos.html" class="nav-link active">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link">Suggestions</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Menu">
+        <svg class="icon" style="width:1.5rem;height:1.5rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+      <div class="container">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="photos.html" class="nav-link active">Photos</a>
+        <a href="calendrier.html" class="nav-link">Calendrier</a>
+        <a href="suggestions.html" class="nav-link">Suggestions</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container page-section">
+      <div class="page-header">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          galerie
+        </div>
+        <h1>
+          Les souvenirs <br />
+          <span class="text-gradient-accent" style="font-style:italic">de la patrouille.</span>
+        </h1>
+        <p>
+          Chaque sortie, chaque weekend, chaque camp. Cliquer sur une activité
+          pour parcourir les photos. Le clic droit est désactivé sur les photos ;
+          utilisez le bouton pour télécharger un album au format ZIP.
+        </p>
+      </div>
+      <div class="photo-list" id="photo-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="assets/caracal-logo.png" alt="" width="48" height="48" loading="lazy" />
+        <div>
+          <div class="logo-title">CARACAL</div>
+          <div class="logo-sub">Toujours en alerte</div>
+        </div>
+      </div>
+      <p class="footer-text">
+          Sur ce blog, vous avez accès aux photos des sorties, camps et week-ends.
+      <br>Si vous possédez des photos, faites le moi savoir par les suggestions.  
+      </p>
+      <div class="footer-contact">
+        <a href="./Readme.html" style="color:#ff7a00;">
+          <strong>Historique du site</strong>
+        </a>
+        Code source<br>Versions précédentes<br>Méthode de développement<br>Déploiement
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> Ambroise Uyttenhove, déploiement et développement</span>
+      <span class="semp">SEMPER PARATI</span>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu photo">
+    <div class="lightbox-header">
+      <div class="lightbox-title" id="lightbox-title"></div>
+      <div class="lightbox-actions">
+        <button class="lightbox-download" id="lightbox-download" type="button">Télécharger</button>
+        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Fermer">✕</button>
+      </div>
+    </div>
+    <span class="lightbox-download-status" id="lightbox-download-status" role="status" aria-live="polite"></span>
+    <div class="lightbox-body">
+      <button class="lightbox-nav lightbox-previous" id="lightbox-previous" type="button" aria-label="Photo précédente">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+      </button>
+      <img id="lightbox-img" src="" alt="" />
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Photo suivante">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="data/photos.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/photos.js"></script>
+</body>
+</html>
